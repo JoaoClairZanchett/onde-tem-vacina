@@ -1,20 +1,16 @@
 import React from 'react';
 import PostoCard from '../PostoCard';
-import { Container, Title, LinhaDivisoria, MensagemInicial } from './styles';
+import { Container, Title, MensagemInicial, SearchInput } from './styles';
 
 const List : React.FC = () => {
     return (
       <Container>
         <Title>
           <span>
-            Encontre um ponto de vacinação próximo de você.
+            Encontre um Ponto
           </span>
-          <LinhaDivisoria/>
           <MensagemInicial>
-            <span>
-              <span>&#128072;</span>
-              Pesquise por CEP / Bairro para localizar os postos próximos de você
-            </span>
+            <SearchInput placeholder='Pesquise pontos de vacinação pelo seu CEP ou bairro' />
           </MensagemInicial>
           <PostoCard/>
         </Title>

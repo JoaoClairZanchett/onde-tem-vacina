@@ -1,16 +1,15 @@
 import React from 'react';
 import List from '../../components/List';
 import MenuBar from '../../components/MenuBar';
-import News from '../../components/News';
+import RightBar from '../../components/RightBar';
 import { Container, Wrapper } from './styles';
 
 const Home : React.FC = () => {
     return (
     <Container>
         <Wrapper>
-            <MenuBar />
             <List />
-            <News />
+            <RightBar />
         </Wrapper>
     </Container>
     );

@@ -18,12 +18,6 @@ export const Title = styled.div`
     font-size: 18px;
   }
 `
-
-export const LinhaDivisoria = styled.div`
-  margin-top: 15px;
-  border: 1px solid #E3E9EC;
-`
-
 export const MensagemInicial = styled.div`
   margin-top: 15px;
   background: #FFFFFF;
@@ -41,3 +35,20 @@ export const MensagemInicial = styled.div`
     }
   }
 `
+
+export const SearchInput = styled.input`
+  height:35px;
+  border: none;
+  border-bottom: 1px solid #C5CACD;
+  width: 100%;
+  color: #262D32;
+  font-size: 18px;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    outline: none;
+  }
+`;

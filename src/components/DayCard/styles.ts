@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    width: 330px;
-    height: 155px;
+    width: 100%;
+    margin-top: 45px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -52,5 +52,57 @@ export const Button = styled.button`
 
   cursor: pointer;
   outline: 0;
+`
+
+export const Row = styled.div`
+  display: flex;
+  margin-bottom: 15px;
+  width: 100%;
+  margin-left: 30px;
+
+  > span {
+    color: #262D32;
+    margin-left: 5px;
+    max-width: 80%;
+    font-size: 14px;
+  }
+`
+
+export const DateSection = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 15px;
     
+    > span {
+      color: #262D32;
+    }
+
+    > strong {
+      font-size: 16px;
+      color: #262D32;
+    }
+`
+
+export const Welcome = styled.div`
+    text-align: start;
+    border-bottom: 1px solid #EAEDEE;
+    width: 100%;
+    padding-bottom: 11px;
+
+  > span {
+    font-weight: bold;
+    font-size: 14px;
+    color: #262D32;
+    margin-left: 15px;
+  }
+`
+
+export const FooterSection = styled.div`
+    width: 100%;
+    background: rgba(180, 212, 238, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
 `
