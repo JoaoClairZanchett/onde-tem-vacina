@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../../components/Footer';
 import List from '../../components/List';
 import MenuBar from '../../components/MenuBar';
 import RightBar from '../../components/RightBar';
@@ -11,6 +12,7 @@ const Home : React.FC = () => {
             <List />
             <RightBar />
         </Wrapper>
+        <Footer/>
     </Container>
     );
   }

@@ -14,6 +14,7 @@ export const Header = styled.div`
   display: flex;
   padding: 10px 0;
   justify-content: space-between;
+  cursor: pointer;
 
   > span {
     color: #000;
@@ -30,6 +31,10 @@ export const Body = styled.div`
     color: #505861
   }
 `
+
+export const PostoData = styled.div``
+
+export const DataGroup = styled.div``
 
 export const DetailsBody = styled.div`
 display: flex;
@@ -83,6 +88,7 @@ export const DetailsContainer = styled.div`
 export const Button = styled.button`
   background: #286E8C;
   border-radius: 100px;
+  color: var(--white);
 
   width: 165px;
 

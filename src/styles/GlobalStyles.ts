@@ -6,7 +6,6 @@ export default createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
 
-    color: var(--white);
   }
   html, body #root{
     max-height: 100vh;
@@ -28,6 +27,7 @@ export default createGlobalStyle`
     --secondary: #15181C;
     --search: #202327;
     --white: #D9D9D9;
+    --black: #262D32;
     --gray: #E5E5E5;
     --outline: #2F3336;
     --retweet: #00C06B;

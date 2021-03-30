@@ -25,11 +25,9 @@ export const ModalContent = styled.div`
     }
 `
 export const ModalFooter = styled.div`
-  > span {
-    color: #262D32;
-    font-weight: bold;
-    font-size: 18px;
-  }
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
 `
 export const OutlineButton = styled.button<Props>`
   border-radius: 100px;
@@ -77,6 +75,10 @@ export const ModalTitle = styled.div`
     }
 `
 
+export const Close = styled.div`
+  cursor: pointer;
+`
+
 export const RadioButton = styled.input`
 
 `
@@ -111,28 +113,112 @@ export const Options = styled.div`
 `
 
 export const InformacoesDeAplicacao = styled.div`
+    display: flex;
+    justify-content: space-between;
 `
 
-export const AvaliarPosto = styled.div`
+export const MenuItemText = styled.div`
+  color: #262D32;
+`
+
+export const FormGroupArea = styled.div`
+  width: 45%;
+`
+
+export const SliderContainer = styled.div`
+    width: 90%;
+    padding: 0 20px;`
+
+export const TextArea = styled.textarea`
+  height:55px;
+  border: none;
+  border-bottom: 1px solid #C5CACD;
+  width: 100%;
+  color: #262D32;
+  font-size: 18px;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    outline: none;
+  }
+`;
+
+export const AgeInput = styled.input`
+  height:25px;
+  border: none;
+  border-bottom: 1px solid #C5CACD;
+  width: 100%;
+  color: #262D32;
+  font-size: 18px;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    outline: none;
+  }`
+
+export const Comentarios = styled.div`
 font-weight: bold;
 font-size: 14px;
+margin-top: 15px;
+
+> span {
+  color: #262D32;
+}`
+
+export const Label = styled.div`
+font-weight: bold;
+font-size: 14px;
+margin-top: 10px;
+margin-bottom: 5px;
 
 > span {
   color: #262D32;
 }
 `
 
-export const Buttons = styled.div`
-    margin-top: 15px;
-    display: flex;
-    justify-content: space-between;
+export const AvaliarPosto = styled.div`
+font-weight: bold;
+font-size: 14px;
+display: flex;
+align-items: center;
+
+> span {
+  color: #262D32;
+}
+`
+
+export const TamanhoFila = styled.div`
+font-weight: bold;
+font-size: 14px;
+margin-top: 20px;
+
+> span {
+  color: #262D32;
+}
+`
+
+export const SliderGroup = styled.div`
+  margin-top: 10px;
+  display: flex;
+`
+
+export const RatingContainer = styled.div`
+  margin-left: 10px;
 `
 
 export const Button = styled.button`
   background: #286E8C;
   border-radius: 100px;
+  margin-left: 15px;
+  color: var(--white);
 
-  width: 165px;
+  width: 190px;
 
   padding: 8px;
   border-radius: 25px;

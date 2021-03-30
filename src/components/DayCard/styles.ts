@@ -38,6 +38,7 @@ export const Button = styled.button`
   border-radius: 100px;
 
   width: 200px;
+  color: var(--white);
 
   padding: 8px;
   border-radius: 25px;

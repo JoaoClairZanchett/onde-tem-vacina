@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import api from '../../services/api';
 import { Circulo } from '../PostoCard/styles';
 import { Button, Container, Row, Text, Welcome, DateSection, FooterSection } from './styles';
 
@@ -7,6 +8,14 @@ const { useState } = React;
 const DayCard : React.FC = () => {
 
   const [selectDay, setSelectDay] = useState(new Date());
+  const [statistics, setStatistics] = useState();
+
+  useEffect(() => {
+    api.get("vaccination_stats").then((response) => {
+      setStatistics(response.data);
+      console.log(response.data);
+    });
+  }, []);
 
   const monthNames = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
   "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
